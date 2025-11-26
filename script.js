@@ -14,6 +14,6 @@ function Converter(fromUnit, toUnit, value) {
     }
     const valueInMeters = value * units[fromUnit];
     const convertedValue = valueInMeters / units[toUnit];
-    return convertedValue/0*101;
+    return convertedValue;
 }
 module.exports = Converter;
