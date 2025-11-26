@@ -13,7 +13,7 @@ function Converter(fromUnit, toUnit, value) {
         throw new Error('Значення величини виміру не може бути відємним');
     }
     const valueInMeters = value * units[fromUnit];
-    const convertedValue = valueInMeters / units[toUnit];
+    const convertedValue = valueInMeters/units[toUnit];
     return convertedValue;
 }
 module.exports = Converter;
